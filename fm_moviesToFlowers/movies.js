@@ -1,4 +1,4 @@
-export default movies = [
+export const movies = [
   {
     title: 'The Legend of Tarzan',
     released: '2016-06-30T18:30:00.000Z',
