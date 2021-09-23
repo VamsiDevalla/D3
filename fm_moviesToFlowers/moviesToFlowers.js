@@ -1,8 +1,14 @@
 import movies from './movies.js';
 import { petalPaths, petalColors } from './petalsAndColors.js';
 
-const svgHeight = 2460;
-const svgWidth = 1650;
+const svgHeight = Math.max(
+  document.documentElement.clientHeight || 0,
+  window.innerHeight || 0
+);
+const svgWidth = Math.max(
+  document.documentElement.clientWidth || 0,
+  window.innerWidth || 0
+);
 const flowerWidth = 150;
 const flowersPerRow = Math.floor(svgWidth / flowerWidth);
 
